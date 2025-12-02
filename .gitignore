@@ -1,0 +1,7 @@
+__pycache__/
+memory_traccker/__pycache__/
+timer/__pycache__/
+bd_connection/__pycache__/
+generated_log/__pycache__/
+data_read/__pycache__/
+multi_core/__pycache__/

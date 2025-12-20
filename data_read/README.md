@@ -1,5 +1,5 @@
-path,csv_listを引数に渡し、
+path,list_csvを引数に渡し、
 
-multi_read_csv(path, csv_list)
+multi_read_csv(path, list_csv)
 
 を呼び出す、返り値として、データフレームが返されるので指定する

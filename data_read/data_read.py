@@ -2,7 +2,14 @@
 import pandas as pd
 import os
 
-def multi_read_csv(path :str, list_csv : list): #pathはcsvが配置されているディレクトリのパス、list_csvに複数ファイルのパスを格納する
+def multi_read_csv(path :str, list_csv : list) -> pd.DataFrame:
+    """
+    複数のCSVファイルを読み込み、結合したDataFrameを返す。\n
+    pathはcsvが配置されているディレクトリの絶対パス。\n
+    list_csvに複数ファイルの名称を格納する。\n
+    list_csvの例: ["data_1.csv","data_2.csv","data_3.csv"]\n
+    それらを結合したDataFrameを返す。
+    """
     #空のDataFrameを作成
     df_combined = pd.DataFrame()
     for csv_file in list_csv:
